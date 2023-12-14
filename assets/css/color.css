@@ -10,7 +10,7 @@
 .what-we-do a:hover,.accordion-item.active .title,.hero-section-two h1 span,
 .heading p,.machine-learning sup,.machine-learning h2,.our-services-text a h4:hover {
    
-    color: #FF005C;
+    color: #f4473d;
 
 }
 /* Background Color */
@@ -25,7 +25,7 @@
 .what-we-do:hover i:after,.what-we-do:hover i:before,ul.image-gallery li figure:before,
 .button,.heading-shap,ul.features li:before {
 
-    background-color:#FF005C;
+    background-color:#f4473d;
 
 }
 .item.partner:hover,
@@ -33,6 +33,6 @@
 .blog.our-blog > a i,.pagenashio a i,button.error-button,.hero-one-slider .owl-nav i,
 .partner-img .partner.arrow i,.pagenashion-number a.pagenashion,.pagenashion-number a:hover,
 .blog a:hover i,.nav-pills .nav-link.active,.pricing .button { 
-    border-color:#FF005C;
+    border-color:#f4473d;
 
 }
