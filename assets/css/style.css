@@ -1128,13 +1128,13 @@ span.flaticon-multiply i {
     padding-top: 10px;
     padding-bottom: 33px;
 }
-.hero-img svg {
+.hero-img .svg {
     left: -20%;
     position: absolute;
     z-index: 0;
-    bottom: 0;
-    fill: url(#paint0_linear_203_4);
-    fill: url(#paint0_linear_203_5);
+    bottom: 5%;
+    /* fill: url(#paint0_linear_203_4);
+    fill: url(#paint0_linear_203_5); */
 }
 /* 08. ai-solutions-img */
 .ai-solutions-img img {
