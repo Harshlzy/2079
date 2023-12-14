@@ -99,6 +99,10 @@
 .subhead{
     font-size:50px
 }
+/*button*/
+a .button{
+    background-color: #f4473d;
+}
 /* General Style */
 
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
@@ -1136,6 +1140,12 @@ span.flaticon-multiply i {
     /* fill: url(#paint0_linear_203_4);
     fill: url(#paint0_linear_203_5); */
 }
+.svg{
+    left: -20%;
+    position: absolute;
+    z-index: 0;
+    bottom: 5%;
+}
 /* 08. ai-solutions-img */
 .ai-solutions-img img {
     border-radius: 50px;
@@ -1352,10 +1362,10 @@ ul.features li:before {
 .our-services-text.stroke i svg {
     stroke: #000;
 }
-.services-img svg {
+.services-img .svg {
     position: absolute;
 }
-.services-img img {
+.services-img .ychoose {
     position: relative;
     z-index: 1;
 }
@@ -2366,7 +2376,7 @@ ul.icon-share {
 .our-services-two > p {
     padding-bottom: 30px;
 }
-.our-services-img img {
+.our-services-img .ychoose {
     margin-bottom: 30px;
     border-radius: 40px;
 }
@@ -4586,7 +4596,7 @@ header.two .top-bar,.works-style2:hover span,.needhelp-contact,
 .ai-solutions-img-two:before,.our-services-text:hover i:before,ul.social-icon li i:hover,
 .hero-img:before,.phone-data:before,.get-in-touch i,.pricing-text,.bannr:before,
 .expert-icon:hover > a i,.blog-two h6,.expert-icon .icon-share i:hover,.widget-title a:before {
-    background-image: linear-gradient(90deg, #AD00FF , #D01020 );
+    background-image: linear-gradient(90deg, #e7e7e7 , #f4473d );
 }
 /* box-shadow */
 .works-style2:hover,
