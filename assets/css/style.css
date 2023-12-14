@@ -3476,7 +3476,7 @@ ul.tags-cloud li a {
     text-transform: capitalize;
     background-color: #ffffff;
 }
-a.color-next, {
+a.color-next{
     margin-left: -15px;
 }
 .pagenashio.two {
