@@ -169,7 +169,7 @@
   }
   .navbar-links li a {
     padding: 5px 13px;
-    font-size: 14px;
+    font-size: 16px;
 	}
   .processing-system img {
     opacity: 0.6;
@@ -282,10 +282,10 @@
   .our-services-img {
     width: 98%;
   }
-  .our-services-img img {
+  .our-services-img .ychoose {
     width: 100%;
   }
-  .our-services-img img.our-services-img-1 {
+  .our-services-img .ychoose.our-services-img-1 {
     width: 66%;
   }
   .our-services-text-two {
@@ -313,7 +313,7 @@
   .our-services-text-two p {
     font-size: 14px;
   }
-  .our-services-img img.our-services-img-2 {
+  .our-services-img .ychoose.our-services-img-2 {
     width: 30%;
   }
 	.hero-img svg {
@@ -510,7 +510,7 @@
 	.our-services-text h4 {
     font-size: 20px;
   }
-  .services-img svg,.services-img img {
+  .services-img .svg,.services-img .ychoose {
     width: 100%;
 	}
 	.slick-dotted.slick-slider {
@@ -793,7 +793,7 @@
     font-size: 52px;
     line-height: 60px;
 	}
-	.services-img svg {
+	.services-img .svg {
     top: -29%;
 	}
 	ul.features li {
@@ -1138,13 +1138,13 @@
 	.ai-solutions-heading h3 {
     margin-top: 20px;
 	}
-	.services-img svg, .services-img img {
+	.services-img .svg, .services-img .ychoose {
     width: 43%;
 	}
 	.services-img {
     margin-bottom: 20px;
   }
-  .services-img svg {
+  .services-img .svg {
     top: -59%;
 	}
 	.our-services-text i {
@@ -1333,7 +1333,7 @@
 	h2 {
     font-size: 30px;
 	}
-	.services-img svg {
+	.services-img .svg {
 		display: none;
 	}
   .heading.two {
@@ -1662,7 +1662,7 @@
   }
 }
 @media(max-width: 450px){
-  .our-services-img img.our-services-img-2 {
+  .our-services-img .ychoose.our-services-img-2 {
     border-radius: 20px;
   }
   form.help {
@@ -1771,7 +1771,7 @@
   .hero-section-two h1 {
     font-size: 27px;
   }
-  .services-img svg, .services-img img {
+  .services-img .svg, .services-img .ychoose {
     width: 90%;
   }
 }
