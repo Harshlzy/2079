@@ -92,6 +92,13 @@
         80. preloader
 
 -----------------------------------------------------------------------------------*/
+/*slider*/
+.slider-cap{
+    font-size: 20px;
+}
+.subhead{
+    font-size:50px
+}
 /* General Style */
 
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
@@ -1116,6 +1123,7 @@ span.flaticon-multiply i {
     font-weight: bold;
 }
 .hero-text p {
+    line-height: 3rem;
     color: #fff;
     padding-top: 10px;
     padding-bottom: 33px;
