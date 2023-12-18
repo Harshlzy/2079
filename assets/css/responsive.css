@@ -386,7 +386,7 @@
     font-size: 14px;
 	}
   ul.features li {
-    font-size: 16px;
+    font-size: 16px;padding-top: 17px
   }
   .logo p {
     width: 96%;
@@ -467,6 +467,9 @@
     width: 78%;
     padding: 0;
 	}
+  .herp-img .svg{
+    width: 90%!important;
+  }
   .bottom-bar-text a img {
     width: 84%;
 	}
@@ -805,6 +808,10 @@
 	.bar-menu {
 		display: block;
 	}
+}
+@media(min-width: 992px){
+  .faq {
+    height: 700px;}
 }
 @media(max-width: 993px){
 	.gap {
