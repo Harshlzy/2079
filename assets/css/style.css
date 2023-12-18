@@ -1205,8 +1205,8 @@ ul.features li:before {
     border-radius: 50px;
     position: absolute;
     content: "";
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     left: 0;
     top:  15%;
 }
@@ -1588,6 +1588,9 @@ ul.features li:before {
     color: #000;
     background-color: #ffffff;
     border: 0;
+    margin-left: 2px;
+    margin-right: 3px;
+    border-radius: 100%;
 }
 .accordion-item .icon:before, .accordion-item .icon:after {
     content: "";
@@ -1625,6 +1628,7 @@ ul.features li:before {
     background-color: #fff;
     border-radius: 51px;
     padding-left: 36px;
+    padding-right: 41px;
     font-weight: 900;
 }
 .accordion-item.active {
@@ -1954,9 +1958,6 @@ footer .text-hover a::before {
     color: #e8e8e8;
     margin-left: 15px;
     padding-bottom: 6px;
-}
-.widget-title li {
-    width: 50%;
 }
 .widget-title li{
     padding-bottom: 20px;
@@ -4558,14 +4559,14 @@ p.num svg {
   animation: rotation 1s linear infinite;
 }
 .loader:after {
-    content: "";
+    content: "";    
     position: absolute;
     left: 0;
     top: 0;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border-bottom: 4px solid #210b3a;
+    border-bottom: 4px solid #ffffff;
     border-left: 4px solid transparent;
 }
 @-webkit-keyframes rotation {
@@ -4626,3 +4627,116 @@ header.two .top-bar,.works-style2:hover span,.needhelp-contact,
 .our-services-text i svg,.our-services-text i:before,.our-services-text h4,.what-we-do:before{
     transition: .4s ease-in-out;
 }
+/*preloader*/
+
+
+.pl {
+	--dur: 3s;
+	margin: auto;
+	position: relative;
+	width: 8em;
+	height: 8em;
+}
+.pl__nucleus,
+.pl__nucleus-particle {
+	position: absolute;
+}
+.pl__nucleus {
+	top: 50%;
+	left: 50%;
+	transform-style: preserve-3d;
+}
+.pl__nucleus-particle,
+.pl__ring,
+.pl__orbit,
+.pl__electron {
+	animation: particleTop var(--dur) linear infinite;
+}
+.pl__nucleus-particle {
+	background-color: white;
+	background-image: radial-gradient(37.5% 37.5% at 37.5% 37.5%,hsla(var(--hue),10%,90%,0.25) 48%,hsla(var(--hue),10%,90%,0) 50%);
+	border-radius: 50%;
+	box-shadow: -0.125em -0.125em 0 hsla(var(--hue),10%,10%,0.25) inset;
+	top: calc(50% - 0.5em);
+	left: calc(50% - 0.5em);
+	width: 1em;
+	height: 1em;
+	transition: background-color var(--trans-dur);
+}
+.pl__nucleus-particle:nth-child(2n) {
+	background-color:#f4473d;
+}
+.pl__nucleus-particle:nth-child(n + 4):nth-child(-n + 9) {
+	animation-name: particleMiddle;
+}
+.pl__nucleus-particle:nth-child(n + 10):nth-child(-n + 12) {
+	animation-name: particleBottom;
+}
+.pl__nucleus-particle:nth-child(2) { animation-delay: calc(var(--dur) * -0.33); }
+.pl__nucleus-particle:nth-child(3) { animation-delay: calc(var(--dur) * -0.67); }
+.pl__nucleus-particle:nth-child(5) { animation-delay: calc(var(--dur) * -0.17); }
+.pl__nucleus-particle:nth-child(6) { animation-delay: calc(var(--dur) * -0.33); }
+.pl__nucleus-particle:nth-child(7) { animation-delay: calc(var(--dur) * -0.5); }
+.pl__nucleus-particle:nth-child(8) { animation-delay: calc(var(--dur) * -0.67); }
+.pl__nucleus-particle:nth-child(9) { animation-delay: calc(var(--dur) * -0.83); }
+.pl__nucleus-particle:nth-child(11) { animation-delay: calc(var(--dur) * -0.33); }
+.pl__nucleus-particle:nth-child(12) { animation-delay: calc(var(--dur) * -0.67); }
+.pl__nucleus-particle:last-child { animation: none; }
+
+.pl__rings {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.pl__ring {
+	animation-name: ring;
+	transform-origin: 64px 64px;
+}
+.pl__ring:nth-child(n + 5):nth-child(-n + 7) {
+	animation-delay: calc(var(--dur) * -0.25);
+}
+.pl__orbit,
+.pl__electron {
+	animation-name: orbit;
+	transition: stroke var(--trans-dur);
+}
+.pl__orbit:first-child {
+	stroke: #f4473d;
+}
+.pl__orbit:nth-child(2) {
+	stroke: white;
+}
+.pl__orbit:nth-child(3) {
+	stroke: white;
+}
+.pl__ring:first-child .pl__orbit:first-child { stroke: #f4473d }
+.pl__ring:nth-child(2) .pl__orbit { animation-delay: calc(var(--dur) * -0.125); }
+.pl__ring:nth-child(3) .pl__orbit { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(4) .pl__orbit { animation-delay: calc(var(--dur) * -0.375); }
+.pl__ring:nth-child(5) .pl__orbit:first-child { stroke: #f4473d }
+.pl__ring:nth-child(6) .pl__orbit { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(7) .pl__electron:nth-child(2) { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(2) { animation-delay: calc(var(--dur) * -0.125); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(3) { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(4) { animation-delay: calc(var(--dur) * -0.375); }
+
+/* Animations */
+@keyframes orbit {
+	from { stroke-dashoffset: 0; }
+	to { stroke-dashoffset: 580; }
+}
+@keyframes ring {
+	from { transform: rotate(0); }
+	to { transform: rotate(1turn); }
+}
+@keyframes particleTop {
+	from { transform: rotateY(0) rotateZ(-35deg) translateY(-100%) rotateZ(35deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(-35deg) translateY(-100%) rotateZ(35deg) rotateY(1turn); }
+}
+@keyframes particleMiddle {
+	from { transform: rotateY(0) rotateZ(90deg) translateY(-100%) rotateZ(-90deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(90deg) translateY(-100%) rotateZ(-90deg) rotateY(1turn); }
+}
+@keyframes particleBottom {
+	from { transform: rotateY(0) rotateZ(-145deg) translateY(-100%) rotateZ(145deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(-145deg) translateY(-100%) rotateZ(145deg) rotateY(1turn); }
