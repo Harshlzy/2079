@@ -162,7 +162,7 @@
     width: 62%;
   }
   .bannr-text h4 {
-    font-size: 56px;
+    font-size: 54px;
   }
   .sidebar {
     padding: 30px;
@@ -452,6 +452,10 @@
   .what-we-do i:before,.what-we-do i:after {
     width: 84px;
     height: 24px;
+    background-color: rgb(29 26 77);
+  }
+  .what-we-do> i{
+    background-color: rgb(29 26 77);
   }
   .what-we-do {
     padding: 50px 30px;
